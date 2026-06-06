@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="w-full max-w-md bg-white rounded-xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4">Register</h2>
+
+      <form id="registrationForm" class="space-y-4" novalidate>
+        <div>
+          <label for="name" class="block font-semibold mb-1">Name</label>
+          <input
+            id="name"
+            type="text"
+            class="w-full rounded-lg border px-3 py-2 border-slate-300 outline-none"
+            autocomplete="name"
+          />
+          <div id="nameError" class="text-sm mt-1 text-red-600" aria-live="polite"></div>
+        </div>
+
+        <div>
+          <label for="email" class="block font-semibold mb-1">Email</label>
+          <input
+            id="email"
+            type="email"
+            class="w-full rounded-lg border px-3 py-2 border-slate-300 outline-none"
+            autocomplete="email"
+          />
+          <div id="emailError" class="text-sm mt-1 text-red-600" aria-live="polite"></div>
+        </div>
+
+        <div>
+          <label for="password" class="block font-semibold mb-1">Password</label>
+          <input
+            id="password"
+            type="password"
+            class="w-full rounded-lg border px-3 py-2 border-slate-300 outline-none"
+            autocomplete="new-password"
+          />
+          <div id="passwordError" class="text-sm mt-1 text-red-600" aria-live="polite"></div>
+        </div>
+
+        <button
+          id="submitBtn"
+          type="submit"
+          disabled
+          class="w-full rounded-lg bg-blue-600 text-white py-2 font-semibold disabled:opacity-60 disabled:cursor-not-allowed"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
