@@ -14,7 +14,7 @@ A simple and responsive Registration Form built using HTML, CSS, and JavaScript.
 ## Technologies Used
 
 * HTML5
-* CSS3
+* Tailwindcss
 * JavaScript (ES6)
 
 ## How It Works
